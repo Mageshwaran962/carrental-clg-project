@@ -29,5 +29,5 @@
 
 ## Live URLs:
 
-- Backend: https://your-app-name.onrender.com
+- Backend: https://carrental-clg-project.onrender.com
 - Frontend: https://your-app-name.vercel.app

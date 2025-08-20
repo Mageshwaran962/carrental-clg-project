@@ -62,6 +62,23 @@ if (process.env.NODE_ENV === "development") {
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
+// Root route
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Car Rental API is running successfully!",
+    version: "1.0.0",
+    endpoints: {
+      auth: "/api/v1/auth",
+      cars: "/api/v1/cars",
+      bookings: "/api/v1/bookings",
+      reviews: "/api/v1/reviews",
+      feedback: "/api/v1/feedback",
+      contact: "/api/v1/contact"
+    }
+  });
+});
+
 // Define routes
 app.use("/api/v1/auth", require("./routes/auth"));
 app.use("/api/v1/cars", require("./routes/cars"));
