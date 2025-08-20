@@ -74,8 +74,8 @@ app.get("/", (req, res) => {
       bookings: "/api/v1/bookings",
       reviews: "/api/v1/reviews",
       feedback: "/api/v1/feedback",
-      contact: "/api/v1/contact"
-    }
+      contact: "/api/v1/contact",
+    },
   });
 });
 
