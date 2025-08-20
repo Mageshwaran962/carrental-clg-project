@@ -1,0 +1,20 @@
+# Render Deployment Configuration
+
+## Environment Variables to Set in Render Dashboard:
+
+NODE_ENV=production
+PORT=10000
+MONGO_URI=mongodb+srv://mageshwaran962:0GALNJ60HG65wEWf@cluster0.f3nrbzy.mongodb.net/car-rental-db?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_jwt_secret_key_here
+JWT_EXPIRE=30d
+JWT_COOKIE_EXPIRE=30
+EMAIL_SERVICE=gmail
+EMAIL_USERNAME=royalcarsproject@gmail.com
+EMAIL_PASSWORD=bekn iryq dgdu ihpe
+EMAIL_FROM=royalcarsproject@gmail.com
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+FROM_NAME=Car Rental Service
+## Build Command: npm install
+## Start Command: npm start
+## Root Directory: backend
